@@ -1,0 +1,21 @@
+<div>
+    <Head>
+      <title>OpenAI Images</title>
+    </Head>
+
+    <main className=main>
+      <h3>Generate an Image</h3>
+      <form>
+        <input
+          type="text"
+          name="receiveImage"
+          placeholder="Enter prompt"
+          [(ngModel)]= "receiveImage"
+        />
+        <input type="button" value="Generate images" (click)="postCompletition()" />
+              </form>
+              <!--<div className=result name = "result"> {{result}} </div> -->
+              <img src= {{result}}>
+              
+    </main>
+</div>

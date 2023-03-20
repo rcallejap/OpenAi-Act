@@ -1,0 +1,20 @@
+<div>
+    <Head>
+      <title>OpenAI Moderations</title>
+      <link rel="icon" href="/perrito.png" />
+    </Head>
+
+    <main className=main>
+      <h3>Moderations</h3>
+      <form>
+        <input
+          type="text"
+          name="inputPrompt"
+          placeholder="Enter an prompt"
+          [(ngModel)]= "inputPrompt"
+        />
+        <input type="button" value="Is it flagged?" (click)="postCompletition()" />
+              </form>
+              <div className=result name = "result"> {{result}} </div>
+    </main>
+</div>

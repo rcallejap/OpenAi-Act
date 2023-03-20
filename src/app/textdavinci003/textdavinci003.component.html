@@ -1,0 +1,19 @@
+<div>
+    <Head>
+      <title>OpenAI Quickstart</title>
+    </Head>
+
+    <main className=main>
+      <h3>Name my pet</h3>
+      <form>
+        <input
+          type="text"
+          name="pet"
+          placeholder="Enter an animal"
+          [(ngModel)]= "pet"
+        />
+        <input type="button" value="Generate names" name = "generatepet" (click)="postCompletition()" />
+              </form>
+              <div className=result name = "result"> {{result}} </div>
+    </main>
+</div>

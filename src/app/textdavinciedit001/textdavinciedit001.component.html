@@ -1,0 +1,26 @@
+<div>
+    <Head>
+        <title>OpenAI Images</title>
+        <link rel="icon" href="/perrito.png" />
+    </Head>
+
+    <main className=main>
+        <h3>Generate an edit</h3>
+        <form>
+        <input
+            type="text"
+            name="inputPromt"
+            placeholder="Enter input prompt"
+            [(ngModel)]= "inputPromt"
+        />
+        <input
+            type="text"
+            name="instructionPrompt"
+            placeholder="Enter instruction for prompt"
+            [(ngModel)]= "instructionPrompt"
+        />
+        <input type="button" value="Generate answer" (click)="postCompletition()" />
+        </form>
+            <div className=result name = "result"> {{result}} </div>
+    </main>
+</div>
